@@ -1,0 +1,32 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: {"*"}
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/World
+    username: root
+    password: Huw78m4usks
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  profiles:
+    active: dev
+
+app:
+   name: In28Minutes
+   description: ${app.name} is your first Spring Boot application
+welcome:
+    message: Welcome to your first Spring Boot app!
+
+basic:
+   value: true
+   message: Dynamic Message YAML
+   number: 100
+
+
+
